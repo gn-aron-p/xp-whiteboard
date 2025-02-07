@@ -1,22 +1,10 @@
-import path from 'node:path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-import { partytownVite } from '@builder.io/partytown/utils';
-import legacy from '@vitejs/plugin-legacy';
-
-import _config from './_config.js';
-
-const HOST = _config.server.host;
-const PORT = _config.server.port;
-
-export default {
+export default defineConfig({
+  plugins: [react()],
   server: {
-    host: HOST,
-    port: PORT
+    host: 'localhost',
+    port: 3000,
   },
-  plugins: [
-    legacy(),
-    partytownVite({
-      dest: path.join(__dirname, 'dist', '~partytown')
-    })
-  ]
-};
+});

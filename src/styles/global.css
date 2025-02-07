@@ -22,7 +22,13 @@
   }
 
   body {
-    @apply bg-primary text-color-light;
+    @apply text-color-light;
+  }
+
+  canvas {
+    touch-action: none;
+    width: 100%;
+    height: 100%;
   }
 
   .triangle::after {

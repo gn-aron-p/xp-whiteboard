@@ -30,7 +30,10 @@
     "@commitlint/config-conventional": "^19.7.1",
     "@playwright/test": "^1.50.1",
     "@total-typescript/ts-reset": "^0.6.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-legacy": "^6.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
     "eslint": "^8.57.0",
@@ -50,6 +53,10 @@
     "terser": "^5.37.0",
     "typescript": "^5.7.3",
     "vite": "^6.0.11"
-  }
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "packageManager": "yarn@4.3.1+sha512.af78262d7d125afbfeed740602ace8c5e4405cd7f4735c08feb327286b2fdb2390fbca01589bfd1f50b1240548b74806767f5a063c94b67e431aabd0d86f7774"
 }
-
